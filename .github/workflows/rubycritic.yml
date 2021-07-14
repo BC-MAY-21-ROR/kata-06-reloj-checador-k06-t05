@@ -31,5 +31,5 @@ jobs:
 
       # Runs RubyCritic on Tests
       - name: RubyCritic on Tests
-        run: mkdir -p tmp/rubycritic && rubycritic --no-browser -p checador/tmp/rubycritic/rubycritic-app -s 65 spec test
+        run: mkdir -p tmp/rubycritic && rubycritic --no-browser -p /tmp/rubycritic/rubycritic-app -s 65 checador/test checador/config checador/lib
 
