@@ -1,9 +1,20 @@
-<h1>Home index</h1>
-<nav>
-    <li>
-    <%= link_to "Inicio", root_path%>
-    </li>
-    <li>
-    <%= link_to "Iniciar sesion", admin_session_path%>
-    </li>
-</nav>
+<h1 class="text-center">Welcome to Checador App!</h1>
+
+<div class="container">
+    <div class="d-flex justify-content-evenly mt-5">
+        <div class="d-flex flex-column btn btn-outline-primary button p-3">
+            <%= link_to "Login as Administrator", new_admin_session_path,
+             class:"fs-1 text-body text-decoration-none"%>
+            <%= image_tag "admin_logo.svg", class:"image_fluid"%>
+        </div>
+        <div class="d-flex flex-column btn btn-outline-primary button mx-2 p-3">
+            <%= link_to "Login as Employee", new_admin_session_path,
+             class:"fs-1 text-body text-decoration-none"%>
+            <%= image_tag "employee_logo.svg", class:"image_fluid"%>
+        </div>
+    </div>
+
+    <div class="card-footer text-muted mt-5">
+        <h2 class="text-center">Good to see you!</h2>
+    </div>
+</div>
