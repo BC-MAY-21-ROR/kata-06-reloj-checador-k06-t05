@@ -35,7 +35,7 @@
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
                   <!--<a class="dropdown-item" href="#">Action</a>-->
-                  <%= link_to "Log out", destroy_admin_session_path, class: "dropdown-item"%>
+                  <%= link_to "Log out", destroy_admin_session_path, method: :delete, class: "dropdown-item"%>
                 </li>
               </ul>
             </li>
