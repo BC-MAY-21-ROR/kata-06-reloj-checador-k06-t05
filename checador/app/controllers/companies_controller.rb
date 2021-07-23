@@ -1,15 +1,15 @@
 class CompaniesController < ApplicationController
    
     def index
-        @companies = Company.all
+        @companies = CompanyBranch.all
       end
       
       def new
-        @companies = Company.new
+        @companies = CompanyBranch.new
       end
     
       def create
-        @companies = Company.new(company_params)
+        @companies = CompanyBranch.new(company_params)
         @companies.save
         redirect_to companies_path
       end
@@ -36,6 +36,6 @@ class CompaniesController < ApplicationController
       end
     
       def set_company
-        @companies = Company.find(params[:id])
+        @companies = CompanyBranch.find(params[:id])
       end
 end
