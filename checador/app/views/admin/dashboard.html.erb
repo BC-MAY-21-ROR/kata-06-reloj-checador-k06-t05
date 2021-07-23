@@ -24,8 +24,8 @@
       <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
           <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
-            <button class="btn btn-search position-absolute" type="submit"><i class="icon ion-md-search"></i></button>
+            <input class="form-control me-2" type="search" placeholder="DASHBOARD" aria-label="Buscar">
+            <button class="btn btn-search position-absolute" type="submit"><i class="icon ion-md-clipboard"></i></button>
           </form>
           <ul class="navbar-nav">
             <li class="nav-item dropdown">
@@ -45,14 +45,16 @@
 
       <div class="container">
         <div class="d-flex justify-content-between align-items-center p-3">
-          <div class="d-flex flex-column">
               <h2 class="margin">Welcome back, Admin!</h2>
               <p class="m-0 fst-italic text-muted">
                 See the latest information
               </p>
-          </div>
-            <button class="btn btn-primary">Employees views</button>
         </div>
+
+        <div class="container-fluid mt-5">
+          <%= render 'employees/index'%>
+        </div>
+
       </div>
       
 </div>
