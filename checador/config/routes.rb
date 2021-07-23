@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   get 'admin/dashboard'
   root to:"home#index"
 
-  resources :employees
+  resources :admin, :employees, :companies
 end
