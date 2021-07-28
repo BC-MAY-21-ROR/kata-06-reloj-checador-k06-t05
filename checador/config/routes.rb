@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   get 'admin/dashboard'
   root to:"home#index"
+  
+  resources :admin, :employees, :companies
 
-  resources :employees
 end

@@ -3,12 +3,12 @@
 <div class="container">
     <div class="d-flex justify-content-evenly mt-5">
         <div class="d-flex flex-column btn btn-outline-primary button p-3">
-            <%= link_to "Login as Administrator", new_admin_session_path,
+            <%= link_to "Login as Administrator", admin_session_path,
              class:"fs-1 text-body text-decoration-none"%>
             <%= image_tag "admin_logo.svg", class:"image_fluid"%>
         </div>
         <div class="d-flex flex-column btn btn-outline-primary button mx-2 p-3">
-            <%= link_to "Employee Registration", new_admin_session_path,
+            <%= link_to "Employee Registration", new_employee_path,
              class:"fs-1 text-body text-decoration-none"%>
             <%= image_tag "employee_logo.svg", class:"image_fluid"%>
         </div>

@@ -1,0 +1,43 @@
+$primary-color: #6c63ff;
+$light-gray: #f7f7f7;
+$black: #212529;
+$dark-gray: #6c757d;
+
+body {
+  overflow: hidden;
+  font-weight: 300;
+  color: $black;
+}
+
+.bg.primary {
+  background-color: $primary-color;
+}
+.bg-light {
+  background-color: white;
+}
+
+#sidebar-container {
+  min-height: 100vh;
+  .logo {
+    padding: 0.875rem 3.25rem;
+  }
+  .menu {
+    width: 18rem;
+    a {
+      font-size: 17px;
+      text-decoration: none;
+    }
+  }
+}
+
+.navbar {
+  border-bottom: 1px solid #ccc;
+}
+.btn-search {
+  margin-left: 165px;
+}
+
+.margin {
+  margin-top: 15px;
+  margin-bottom: 0px;
+}

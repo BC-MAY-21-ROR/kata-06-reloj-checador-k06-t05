@@ -5,12 +5,12 @@ class EmployeesController < ApplicationController
   end
   
   def new
-    @employee = Employee.new
+    @employees = Employee.new
   end
 
   def create
-    @employee = Employee.new(employee_params)
-    @employee.save
+    @employees = Employee.new(employee_params)
+    @employees.save
     redirect_to employees_path
   end
 
@@ -20,12 +20,12 @@ class EmployeesController < ApplicationController
 
   def update
     set_employee
-    @employee.update(employee_params)
+    @employees.update(employee_params)
   end
 
   def destroy
     set_employee
-    @employee.destroy
+    @employees.destroy
 
     redirect_to employees_path
   end
@@ -37,7 +37,7 @@ class EmployeesController < ApplicationController
   end
 
   def set_employee
-    @employee = Employee.find(params[:id])
+    @employees = Employee.find(params[:id])
   end
 
 end
