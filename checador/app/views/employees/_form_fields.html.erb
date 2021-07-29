@@ -1,0 +1,32 @@
+<form class="row g-3 border bg-light">
+  
+    <div class="col-md-6">
+      <label for="validationFullname" class="form-label">Full Name</label>
+      <input type="text" class="form-control" id="validationFullname" placeholder="Juanito perez perez" required>
+    </div>
+    
+    <div class="col-md-2">
+      <label for="validationEmployenumber" class="form-label">Employe Number</label>
+      <input type="number" class="form-control" id="validationEmployenumber" placeholder="20201234" required>
+    </div>
+    <div class="col-md-2">
+      <label for="validationPrivatenumber" class="form-label">Private Number</label>
+      <input type="number" class="form-control" id="validationPrivatenumber"  placeholder="12" required>
+    </div>
+
+    <div class="col-md-4">
+      <label for="validationPosition" class="form-label">Position</label>
+      <input type="text" class="form-control" id="validationPosition" placeholder="Inspector" required>
+    </div>
+  
+    <div class="col-md-4">
+      <label for="validationEmail" class="form-label">Email</label>
+      <input type="Email" class="form-control" id="validationEmail" placeholder="juanito@gmail.com" required>
+    </div>
+    
+    <div class="col-12">
+      <%= link_to "Cancel", employees_path, class:"btn btn-primary"%>
+       <%= link_to "#{button_title}", "#{title_path}", class:"btn btn-primary" %>
+    </div>
+</form>
+</div>
