@@ -1,4 +1,5 @@
 class CompaniesController < ApplicationController
+
   before_action :set_company, only: %i[ show edit update destroy ]
 
   # GET /companies or /companies.json
@@ -43,6 +44,7 @@ class CompaniesController < ApplicationController
       else
         format.html { render :edit, status: :unprocessable_entity }
         format.json { render json: @company.errors, status: :unprocessable_entity }
+
       end
     end
   end
