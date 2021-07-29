@@ -1,0 +1,16 @@
+<div class="container mt-5">
+  <h1 class="text-center">Check in / Check out</h1>
+  <div class="box">
+    <%= image_tag "clock_employees", class:"image_fluid image"%>
+    <%= form_with do |f|%>
+      <div class="form-group">
+        <%= f.label :private_number, class:"form-label"%>
+        <%= f.password_field  :private_number, class:"form-control"%>
+      </div>
+      <div class="toolbar mt-2 d-flex justify-content-between">
+        <%=f.submit "Check in", class:"btn btn-primary"%>
+        <%=f.submit "Check out", class:"btn btn-secondary"%>
+      </div>
+    <% end %>
+  </div>
+</div>
