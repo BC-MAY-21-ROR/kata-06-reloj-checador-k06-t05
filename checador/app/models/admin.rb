@@ -4,5 +4,6 @@ class Admin < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
   
-  has_many :employees, :companies
+  has_many :employees
+  has_many :companies
 end
